@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+/* Barra de Navegação */
+a{
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover{
+    opacity: 0.7;
+}
+
+.logo{
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    background: #23232e;
+    height: 8vh;
+}
+
+/* Home */
+
+main{
+    position: relative;
+    min-height: 92vh;
+}
+
+.bg-img{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(2px);
+    transform: scale(1.05);
+    z-index: 0;
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.hero{
+    position: relative;
+    height: 92vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.hero h1{
+    font-size: 4rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 12px rgba(0,0,0,.5);
+}
+
+.hero h1,
+.hero .busca{
+    position: relative;
+    z-index: 1;
+}
+
+.busca{
+    display: flex;
+    gap: 15px;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.15);
+}
+
+.busca button{
+    background: #f7a52b;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+}
+
+.campo{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.campo label{
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #555;
+}
+
+.campo input{
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-family: inherit;
+}

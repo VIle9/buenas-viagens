@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>Buenas Viagens</title>
 </head>
 <body>
     <header>
-        <h1>Buenas Viagens!</h1>
-
+        
         <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
+            <a class="logo" href="#">Buenas Viagens!</a>
+            <ul class="nav-list">
+                <li><a href="#home">Home</a></li>
                 <li><a href="#">Passeios</a></li>
                 <li><a href="#">Destinos</a></li>
                 <li><a href="#">Avaliações</a></li>
@@ -20,21 +23,30 @@
         </nav>
     </header>
     <main>
-        <section>
-            <h2>Explore o Mundo!</h2>
-                <form>
-                    <label for="destino">Destino</label>
-                    <br>
-                    <input type="text" id="destino" name="destino" placeholder="Para onde você vai?">
+        
+        <section class="hero" id="home">
+            <img src="assets/paisagem_5.jpg" alt="" class="bg-img">
 
+            <h1>Explore o Mundo!</h1>
+
+            <form class="busca">
+                <div class="campo">
+                    <label for="destino">Destino</label>
+                    <input type="text" id="destino" name="destino" placeholder="Para onde você vai?">
+                </div>
+
+                <div class="campo">
                     <label for="ida">Data de ida</label>
                     <input type="date" id="ida" name="ida">
-
+                </div>
+            
+                <div class="campo">
                     <label for="volta">Data de retorno</label>
                     <input type="date" id="volta" name="volta">
+                </div>
 
-                    <button type="submit">Buscar</button>
-                </form>
+                <button type="submit">Buscar</button>
+            </form>
         </section>
 
         <section class="destinos">
@@ -72,7 +84,7 @@
                 <div class="card">
                     <img src="assets/barcelona.jpg" alt="Barcelona">
                     <div class="card-info">
-                        <h3>Barceolna, Espanha</h3>
+                        <h3>Barcelona, Espanha</h3>
                         <p>Pariatur autem harum ratione eveniet porro
                         quidem distinctio, laudantium ducimus ipsam temporibus.</p>
 
@@ -111,7 +123,7 @@
                     </div>
                 </div>
 
-                <div>
+                <div class="card">
                     <img src="assets/londres.jpg" alt="Londres">
                     <div class="card-info">
                         <h3>Londres, Inglaterra</h3>
