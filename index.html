@@ -7,6 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <title>Buenas Viagens</title>
 </head>
 <body>
@@ -16,9 +18,9 @@
             <a class="logo" href="#">Buenas Viagens!</a>
             <ul class="nav-list">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#">Passeios</a></li>
-                <li><a href="#">Destinos</a></li>
-                <li><a href="#">Avaliações</a></li>
+                <li><a href="#passeios">Passeios</a></li>
+                <li><a href="#destinos">Destinos</a></li>
+                <li><a href="#avaliacoes">Avaliações</a></li>
             </ul>
         </nav>
     </header>
@@ -49,7 +51,7 @@
             </form>
         </section>
 
-        <section class="destinos">
+        <section class="destinos" id="passeios">
             <div class="destinos-texto">
                 <h2>Próximos Passeios & Destinos</h2>
 
@@ -66,25 +68,25 @@
                 accusamus cupiditate animi recusandae assumenda. Similique, eveniet.
                 </p>
 
-                <button>Saiba mais</button>
+                <button class="btn-saiba">Saiba mais</button>
             </div>
 
             <div class="galeria">
-                <img src="assets/images_1.jpg" alt="praia">
-                <img src="assets/images_2.jpg" alt="grupo">
-                <img src="assets/images_3.jpg" alt="paris">
-                <img src="assets/images_4.jpg" alt="paris2">
+                <img src="assets/Default_1.jpeg" alt="">
+                <img src="assets/Default_2.jpg" alt="">
+                <img src="assets/Default_3.jpg" alt="">
+                <img src="assets/Default_4.jpg" alt="">
             </div>
         </section>
 
-        <section class="viagens">
+        <section class="viagens" id="destinos">
             <h2>Para onde você quer viajar?</h2>
 
             <div class="cards-viagens">
                 <div class="card">
-                    <img src="assets/barcelona.jpg" alt="Barcelona">
+                    <img src="assets/Fortaleza-CE,Meireles.jpg" alt="Barcelona">
                     <div class="card-info">
-                        <h3>Barcelona, Espanha</h3>
+                        <h3>Meireles - Fortaleza, Ce</h3>
                         <p>Pariatur autem harum ratione eveniet porro
                         quidem distinctio, laudantium ducimus ipsam temporibus.</p>
 
@@ -96,9 +98,9 @@
                 </div>
 
                 <div class="card">
-                    <img src="assets/porto.jpg" alt="Porto">
+                    <img src="assets/Fortaleza-CE,Aldeota.png" alt="Porto">
                     <div class="card-info">
-                        <h3>Porto, Portugal</h3>
+                        <h3>Aldeota - Fortaleza, Ce</h3>
                         <p>Pariatur autem harum ratione eveniet porro
                         quidem distinctio, laudantium ducimus ipsam temporibus.</p>
 
@@ -110,9 +112,9 @@
                 </div>
 
                 <div class="card">
-                    <img src="assets/milao.jpg" alt="Milao">
+                    <img src="assets/Fortaleza-CE,Praia_de_Iracema.jpg" alt="Milao">
                     <div class="card-info">
-                        <h3>Milão, Itália</h3>
+                        <h3>Praia de Iracema - Fortaleza, Ce</h3>
                         <p>Pariatur autem harum ratione eveniet porro
                         quidem distinctio, laudantium ducimus ipsam temporibus.</p>
 
@@ -124,9 +126,9 @@
                 </div>
 
                 <div class="card">
-                    <img src="assets/londres.jpg" alt="Londres">
+                    <img src="assets/Fortaleza-CE,Praia_do_Futuro.jpg" alt="Londres">
                     <div class="card-info">
-                        <h3>Londres, Inglaterra</h3>
+                        <h3>Praia do Futuro - Fortaleza, Ce</h3>
                         <p>Pariatur autem harum ratione eveniet porro
                         quidem distinctio, laudantium ducimus ipsam temporibus.</p>
 
@@ -138,9 +140,9 @@
                 </div>
 
                 <div class="card">
-                    <img src="assets/Lauterbrunnen.jpg" alt="Lauterbrunnen">
+                    <img src="assets/Fortaleza-CE,Varjota.jpg" alt="Lauterbrunnen">
                     <div class="card-info">
-                        <h3>Lauterbrunnen, Suiça</h3>
+                        <h3>Varjota - Fortaleza, Ce</h3>
                         <p>Pariatur autem harum ratione eveniet porro
                         quidem distinctio, laudantium ducimus ipsam temporibus.</p>
 
@@ -152,9 +154,9 @@
                 </div>
 
                 <div class="card">
-                    <img src="assets/paris.jpg" alt="Paris">
+                    <img src="assets/Fortaleza-CE,Cocó.jpg" alt="Paris">
                     <div class="card-info">
-                        <h3>Paris, França</h3>
+                        <h3>Cocó - Fortaleza, Ce</h3>
                         <p>Pariatur autem harum ratione eveniet porro
                         quidem distinctio, laudantium ducimus ipsam temporibus.</p>
 
@@ -165,6 +167,29 @@
                     </div>
                 </div>
             </div>
+        </section>
+
+        <section class="avaliacoes" id="avaliacoes">
+            <h2>Avaliações dos Clientes</h2>
+
+            <div class="avaliacao-container">
+                <button id="anterior" class="setas">&#10094;</button>
+
+                <div class="cliente">
+                    <img id="foto-cliente" src="assets/foto.jpg" alt="cliente">
+                    
+                    <h3 id="nome-cliente">
+                        Patrícia, <span>Jornalista</span>
+                    </h3>
+                    
+                    <p id="texto-cliente" class="texto-avaliacao">
+                        Excelente experiência de viagem!
+                    </p>
+                </div>
+
+                <button id="proximo" class="setas">&#10095;</button>
+            </div>
+
         </section>
     </main>
 
@@ -199,12 +224,21 @@
                 </form>
 
                 <div class="social">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <a href="#">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
                 </div>
             </div>
         </div>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
